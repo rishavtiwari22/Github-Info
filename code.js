@@ -13,7 +13,7 @@ function btnClicked(){
         myname.innerText = data.name ? data.name : data.login;
 
         let mybio = document.getElementById('bio');
-        mybio.innerText = `I'm ${data.name ? data.name : data.login} \n I Love Coding!`
+        mybio.innerText = `I'm ${data.name}\n${data.bio ? data.bio : '-'}\nI Love Coding!`
 
         let alldata = document.querySelectorAll('i');
         alldata[0].innerText = data.type ? data.type : 'Unknown';
